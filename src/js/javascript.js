@@ -1,4 +1,4 @@
-     var storedNumber = 0; //number on the left of operation (storedNumber [+,-,*..] currentNumber = result)
+        var storedNumber = 0; //number on the left of operation (storedNumber [+,-,*..] currentNumber = result)
         var currentNumber = ''; //number on the right of operation
         var result = 0; //aux
         var operation = ''; //+,-,*...
