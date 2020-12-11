@@ -1,0 +1,62 @@
+<!--Project: Vanilla JS Calculator-->
+<!--Author: Ruben Munoz Solera-->
+<!--Date: 08/12/2020 (DD/MM/YYYY)-->
+<!--Description: Calculator made in 
+    pure javascript part of my programming learning journey.
+    It can handle multiple digits and multiple operations.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruben's Vanilla JS Calculator</title>
+    <link rel="stylesheet" href="css/styles.css">
+    </button>
+
+    <script type="text/javascript" src="js/javascript.js">
+    </script>
+
+</head>
+<body>
+    <form onsubmit="calculate()">
+        <div class="calculator">
+            <div class="row display" id="display">0</div>
+            <div class="row clear-buttons">
+                <input type='button' class="retr-button clear-btn" value="Retr" onclick="retr()"></input >
+                <input type='button' class="ce-button clear-btn" value="CE" onclick="clearEntry()"></input >
+                <input type='button' class="c-button clear-btn" value="C" onclick="clearC()"></input >
+            </div>
+            <div class="row row-num-1">
+                <input type='button' class="7-button digits" value="7" accesskey="7" onclick="addValue('7')"></input >
+                <input type='button' class="8-button digits" value="8" accesskey="8" onclick="addValue('8')"></input >
+                <input type='button' class="9-button digits" value="9" accesskey="9" onclick="addValue('9')"></input >
+                <input type='button' class="divis-button operator" value="/" onclick="addOperation('/')"></input >
+                <input type='button' class="sqrt-button operator" value="sqrt" onclick="addOperation('sqrt')"></input>
+            </div>
+            <div class="row row-num-2">
+                <input type='button' class="4-button digits" value="4" onclick="addValue('4')"></input>
+                <input type='button' class="5-button digits" value="5" onclick="addValue('5')"></input>
+                <input type='button' class="6-button digits" value="6" onclick="addValue('6')"></input>
+                <input type='button' class="multi-button operator" value="*" onclick="addOperation('*')"></input>
+                <input type='button' class="percent-button operator" value="%" onclick="addOperation('%')"></input>
+            </div>
+            <div class="row row-num-3">
+                <input type='button' class="1-button digits" value="1" onclick="addValue('1')"></input>
+                <input type='button' class="2-button digits" value="2" onclick="addValue('2')"></input>
+                <input type='button' class="3-button digits" value="3" onclick="addValue('3')"></input>
+                <input type='button' class="minus-button operator" value="-" onclick="addOperation('-')"></input>
+                <input type='button' class="fract-button operator" value="1/x" onclick="addOperation('inv')"></input>
+            </div>
+            <div class="row row-num-4">
+                <input type='button' class="0-button digits" value="0" onclick="addValue('0')"></input>
+                <input type='button' class="2-button digits" value="+/-" onclick="addOperation('+-')"></input>
+                <input type='button' class="3-button digits" value="." onclick="addDecimal('.')")></input>
+                <input type='button' class="minus-button operator" value="+" onclick="addOperation('+')"></input>
+                <input type='button' class="fract-button operator" value="=" onclick="resolveCalculation()"></input>
+            </div>
+        </div>
+    </form>
+
+</body>
+</html>
